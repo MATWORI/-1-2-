@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+<script>
+
+alert("Программа по нахождению простых четырёхзначиных чисел");
+let count = 0;
+for (let i = 1000; i < 9999; i++)
+{
+ let k = 0;
+ for(let j = 2; j < (i /2+1) ;j++)
+ {
+
+  if (i % j == 0){
+   k += 1;
+  }
+ }
+ if (k == 0){count += 1}
+}
+alert(count);
+
+</script>
+</body>
+</html>
